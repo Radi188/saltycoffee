@@ -9,7 +9,8 @@ async function bootstrap() {
       'http://localhost:4173',
       'http://127.0.0.1:5173',
       'http://localhost:3000',
-      'http://[IP_ADDRESS]',
+      // Production — Vercel (add your exact domain once you have it)
+      /\.vercel\.app$/,
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: [
